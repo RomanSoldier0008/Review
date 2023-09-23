@@ -1,0 +1,36 @@
+.flex-container{
+    border: 4px solid green;
+    background: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: row; /*Ordena en fila los elementos dentro de esta clase, "flex-container"*/
+    flex-wrap: wrap; /*Hace que los elementos ocupen todos el espacio que tengan asignado en su respectiva clase css, obviamente que esten dentro de la clase, "flex-container"*/
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    justify-content: space-around; /*Establecemos el mismo espacio entre las cajas del container*/
+    align-content: center; /*Establezco todos los items(elementos con clase caja dentro de la clase flex-cointainer)
+                            que ocupen la mitad del alto esto seria en caso que la clase box no contenga el atributo heigth(es decir, una altura establecida)*/
+}
+.box{
+    border: 1px solid white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    margin: 1%;
+    padding: 2%;
+    order: 2;
+}
+.box.box1{
+    background-color: peru;
+    order: 2;
+}
+.box.box2{
+    background-color: violet;
+    order: 3;
+}
+.box.box3{
+    background-color: mediumslateblue;
+    order: 1;
+}
